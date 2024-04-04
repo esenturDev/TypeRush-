@@ -3,6 +3,8 @@ import { useTypeRushState } from "../../util/store";
 import NewHome from "../pages/NewHome";
 import { texts } from "../../util/texts";
 import styles from './Layout.module.scss'
+import { FocusWrapper } from "../FocusWrapper/FocusWrapper";
+import { GameSummary } from "../GameSummary/GameSummary";
 
 const Layout = () => {
 	const { points, earnedPoints, setPoints, setEarnedPoints } =
@@ -161,7 +163,20 @@ const Layout = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			{!isFocused &&}
+			{!isFocused && <FocusWrapper/>}
+			{isCompleted ? (
+				<GameSummary 
+				calculateWPM={calculateWPM}
+				points={points}
+				mistakes={mistakes}
+				earnedPoints={earnedPoints}
+				handleReplay={handleReplay}
+				/>
+			) : (
+				<div className={styles.gameContainer}>
+					
+				</div>
+			)}
 			{/* <NewHome /> */}
 		</div>
 	);

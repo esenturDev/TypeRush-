@@ -9,7 +9,7 @@ type GameSummaryProps = {
   handleReplay: () => void;
 }
 
-const GameSummary: FC<GameSummaryProps> = ({calculateWPM, points, mistakes, earnedPoints, handleReplay}) => {
+export  const GameSummary: FC<GameSummaryProps> = ({calculateWPM, points, mistakes, earnedPoints, handleReplay}) => {
   return (
     <div className={styles.wrapper}>
         <p>
@@ -38,5 +38,3 @@ const GameSummary: FC<GameSummaryProps> = ({calculateWPM, points, mistakes, earn
     </div>
   )
 }
-
-export default GameSummary
