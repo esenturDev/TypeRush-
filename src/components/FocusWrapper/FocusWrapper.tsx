@@ -1,7 +1,7 @@
-import styles from "./FocusWrapper.module.scss";
+import styles from "./FocusWrapper.module.css";
 import { PiCursorFill } from "react-icons/pi";
 
-export const FocusWrapper = () => {
+export default  function FocusWrapper () {
 	return (
 		<div className={styles.wrapper}>
 			<h1>
@@ -10,4 +10,4 @@ export const FocusWrapper = () => {
 			</h1>
 		</div>
 	);
-};
+}

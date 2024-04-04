@@ -1,5 +1,5 @@
 export const texts = [
-	"Exploring new technologies and innovations is not just a hobby; it's a journey into the future, shaping our world.",
+  "Exploring new technologies and innovations is not just a hobby; it's a journey into the future, shaping our world.",
   "React's influence on front-end development is undeniable, offering a streamlined, efficient approach to user interface creation.",
   "Typing fast and accurately is not just about speed; it's about enhancing productivity and achieving excellence in every task.",
   "The transformative power of machine learning across industries is profound, offering insights and efficiencies previously unimaginable.",

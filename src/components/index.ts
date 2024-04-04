@@ -1,6 +1,4 @@
-// import { lazy } from "react";
-// import { FocusWrapper } from './FocusWrapper/FocusWrapper';
-// import {GameSummary} from './GameSummary/GameSummary'
+import { lazy } from "react";
 
-// export const FocusWrapper = lazy(() => import("./FocusWrapper/FocusWrapper"));
-// export const GameSummary = lazy(() => import("./GameSummary/GameSummary"))
+export const FocusWrapper = lazy(() => import("./FocusWrapper/FocusWrapper"));
+export const GameSummary = lazy(() => import("./GameSummary/GameSummary"));

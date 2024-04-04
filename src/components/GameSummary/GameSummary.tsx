@@ -1,5 +1,4 @@
-import { FC } from 'react';
-import styles from './GameSummary.module.scss';
+import styles from "./GameSummary.module.css";
 
 type GameSummaryProps = {
   calculateWPM: () => string | 0;
@@ -7,12 +6,18 @@ type GameSummaryProps = {
   mistakes: number;
   earnedPoints: number;
   handleReplay: () => void;
-}
+};
 
-export  const GameSummary: FC<GameSummaryProps> = ({calculateWPM, points, mistakes, earnedPoints, handleReplay}) => {
+export default function GameSummary({
+  calculateWPM,
+  points,
+  mistakes,
+  earnedPoints,
+  handleReplay,
+}: GameSummaryProps) {
   return (
     <div className={styles.wrapper}>
-        <p>
+      <p>
         WPM: <span>{calculateWPM()}</span>
       </p>
       <p>
@@ -36,5 +41,5 @@ export  const GameSummary: FC<GameSummaryProps> = ({calculateWPM, points, mistak
         Play Again
       </button>
     </div>
-  )
+  );
 }
