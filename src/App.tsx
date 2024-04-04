@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./App.module.css";
 import { FocusWrapper, GameSummary } from "./components";
@@ -7,7 +8,7 @@ import { useTypeRushStore } from "./util/store";
 
 export default function App() {
 	const { points, earnedPoints, setPoints, setEarnedPoints } =
-	useTypeRushStore();
+		useTypeRushStore();
 	const [mistakes, setMistakes] = useState<number>(0);
 	const [input, setInput] = useState<string>("");
 	const [capsLock, setCapsLock] = useState<boolean>(false);
